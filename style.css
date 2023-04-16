@@ -1,0 +1,54 @@
+header {
+  background-color: #FFFF00;
+  color: #fff;
+  padding: 20px;
+}
+header h1 {
+  margin: 0;
+}
+nav ul {
+  list-style-type: Arial;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: Arial;
+}
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 40px;
+}
+section h2 {
+  margin-top: 0;
+}
+section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+section ul li {
+  margin-bottom: 20px;
+}
+section ul li h3 {
+  margin-top: 0;
+}
+section ul li p {
+  margin: 0;
+}
+section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+footer {
+  background-color: #FFFF00;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
