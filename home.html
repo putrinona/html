@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WEBSITE CLAUDIA | The Best, awesome website ever</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+ /* ====GLOBAL STYLE==== */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ff0000;
+      font-family: Cambria, "Times New Roman", serif;
+    }
+    .container {
+      width: 960px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 0 20px;
+    box-shadow: 1px 0px 15px, -1px 0px 15px ;
+    }
+    .clear{
+      clear: both;
+    }
+  #mainMenu {
+      display: none;
+    }
+    
+    /* =====HEADER===== */
+    .header{
+      height: 95px;
+      background: url('image/mywebsite_logo.png')
+                  no-repeat 10px 10px ;
+    }
+    .header .ads {
+      float: right;
+      margin-top: 15px;
+    }
+    
+    /* =====NAVIGATION===== */
+    .nav ul, .nav li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-transform: uppercase;
+    z-index: 1;
+    }
+    .nav li a {
+      display: block;
+      background-color: #ff0000;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      height: 30px;
+      line-height: 30px;
+      padding: 5px 20px;
+      border-bottom: 2px solid #FFF;
+    }
+    .nav li:hover>a {
+      background-color: #0AED0A;
+      color: black;
+    }
+  .nav ul li{
+      position: relative;
+      float: left;
+    }
+    .topmenu li:hover ul{
+      left: 0;
+    }
+    ul.submenu li {
+      width: 180px;
+    }
+    ul.submenu {
+      position: absolute;
+      top: 42px;
+      left: -2000px;
+    }
+    
+    /* =====SIDEBAR===== */
+    .sidebar {
+      width: 280px;
+      float: left;
+      margin-top: 10px;
+    }
+    .sidebar img {
+      width: 280px;
+      margin: 10px 0;
+    }
+    .sidebar ul, .sidebar li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .sidebar li a {
+      display: block;
+      background-color: #ff0000;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      height: 30px;
+      line-height: 30px;
+      padding-left: 10px;
+      border-bottom: 2px solid #FFF;
+    }
+    .sidebar li a:hover {
+      background-color: #0AED0A;
+      color: black;
+    }
+    
+    /* =====MAIN===== */
+    .main{
+      width: 660px;
+      float: right;
+    }
+    .article {
+      margin: 10px;
+      overflow: hidden;
+    }
+    .article h1 {
+      margin: 0px;
+    text-shadow: 3px 3px 1px silver;
+    }
+    .main p, .main hr {
+      margin: 5px 0;
+    }
+    .article img {
+      height: 150px;
+      float: left;
+      padding: 10px 10px 0px 0;
+    opacity: 0.7;
+    transition: 0.5s;
+    }
+  .article img:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+    
+     /* =====FOOTER===== */
+    .footer{
+      margin-top: 20px;
+      border-top: 1px solid black;
+      overflow: hidden;
+     }
+    .copyright {
+      float: left;
+     }
+    .footermenu ul, .footermenu li {
+      margin: 0;
+      list-style: none;
+      float: right;
+     }
+    .footermenu li a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 5px;
+      color: #198C13;
+    }
+  .footermenu li a:hover {
+      text-decoration: underline;
+    }
+  
+   /* =====MEDIA QUERY TABLET===== */
+  @media only screen and (min-width: 481px) and (max-width: 900px){
+    .container {
+        width: 80%;
+      min-width: 660px;
+    }
+    .header .ads {
+      width: 50%;
+      }
+    .sidebar {
+        width: 28%;
+    }
+    .sidebar img {
+        width: 100%;
+      }
+    .main{
+        width: 70%;
+      }
+  } 
+  
+  /* =====MEDIA QUERY SMARTPHONE===== */
+    @media only screen and (max-width: 480px){  
+      .container {
+        width: 320px;
+      }
+      .main {
+        float: none;
+        width: 320px;
+      }
+      .sidebar {
+        float: none;
+        width: 320px;
+      }
+      .article img {
+        width: 100%;
+       float: none;
+        padding: 10px 10px 0px 0;
+      }
+      .sidebar img {
+        width: 100%;
+      }
+      #mainMenu {
+        display: block;
+        width: 100%;
+      float: none;
+      margin-top: 70px;
+      }
+      .topmenu {
+        display: none;
+      }
+      .header .ads {
+        width: 100%;
+        float: none;
+        margin-top: 100px;
+      }
+      .footer{
+        margin-top: 0px;
+    }
+      .footermenu, .footermenu li, .copyright {
+      padding: 0;
+        float: none;
+      text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<a href="iklan.html">
+				<img class="ads" src="image/ads_horizontal">
+			</a>
+		</div>
+
+		<div class="nav">
+			<ul class="topmenu">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="categories.html">Categories</a>
+				<ul class="submenu">
+					<li><a href="html.html">HTML</a></li>
+					<li><a href="css.html">CSS</a></li>
+					<li><a href="php.html">PHP</a></li>
+					<li><a href="mysql.html">MySQL</a></li>
+					<li><a href="javascript.html">Javascript</a></li>
+				</ul>
+				</li>
+
+				<li><a href="our_product.html">Our Product</a>
+				<ul class="submenu">
+					<li><a href="ebook.html">Ebook</a></li>
+					<li><a href="buku.html">Buku</a></li>
+					<li><a href="video_dvd.html">Video DVD</a></li>
+				</ul>
+				</li>
+
+				<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+
+			<select id="mainMenu">
+				<option value="home.html">Home</option>
+				<option value="blog.html">Blog</option>
+				<option value="categories.html">Categories</option>
+					<option value="html.html">+ HTML</option>
+					<option value="css.html">+ CSS</option>
+					<option value="php.html">+ PHP</option>
+					<option value="mysql.html">+ MySQL</option>
+					<option value="javascript.html">+ Javascript</option>
+				<option value="our_product.html">Our Product</option>
+					<option value="ebook.html">+ Ebook</option>
+					<option value="buku.html">+ Buku</option>
+					<option value="video_dvd.html">+ Video Dvd</option>
+					<option value="contact_us.html">+ Contact Us</option>
+			</select>
+
+			<br class="clear">
+		</div>
+
+		<title>HOME</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">HOME</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Artikel</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Selamat Datang di Website Kami</h1>
+      <p>Website kami menyediakan berbagai informasi menarik seputar teknologi, bisnis, dan gaya hidup.</p>
+      <button>Lihat Artikel</button>
+    </section>
+
+    <section class="main">
+      <article>
+        <h2>Pengenalan Dasar HTML Untuk Pemula</h2>
+        <img src="image/Gambar 3.png">
+        <p>HTML atau HyperText Markup Language merupakan sebuah bahasa markah untuk membuat halaman web. 1
+          Jadi, HTML itu adalah sebuah bahasa yang menggunakan markup atau penanda untuk membuat halaman web Penanda atau markup ini, nanti akan kita sebut dengan Tag.HTML berperan untuk menentukan struktur konten dan tampilan dari sebuah web.HTML disusun berdasar kode dan simbol tertentu, yang dimasukkan dalam sebuah file atau dokumen. Sehingga bisa ditampilkan pada layar komputer. Dan bisa dipahami oleh para pengguna internet.Memahami setiap kata yang terkandung, hypertext sendiri dimaksudkan sebagai metode yang digunakan untuk berpindah laman web ke laman lain. Usai mengklik tulisan atau simbol yang muncul di halaman website.Lalu istilah markup, diartikan sebagai suatu hal yang dilakukan tag HTML terhadap teks didalamnya. Contoh jika mengetik suatu teks dengan tanda tag  . Maka teks tersebut akan muncul dengan huruf tebal atau bold di laman website.Melansir dari Nesabamedia, 'language' berarti bahasa pemrograman atau script. Disusun dari tag-tag tertentu yang akan diterjemahkan dalam teks atau visual yang bisa dilihat di website.</p>
+        <a href="#">Baca Selengkapnya</a>
+      </article>
+
+      <article>
+        <h2>Pensil Warna</h2>
+        <img src="image/Gamabar 4.png">
+        <p>Pensil warna adalah media seni yang dibuat dari inti berpigmen kecil yang terbungkus dalam cangkang silinder kayu seperti halnya pensil. Namun, berbeda dengan pensil grafit dan pensil arang, inti pensil warna berbahan dasar lilin atau minyak dan mengandung berbagai proporsi pigmen, zat tambahan, dan bahan pengikat.</p>
+        <a href="#">Baca Selengkapnya</a>
+      </article>
+
+      <article>
+        <h2>Fungsi Laptop Untuk Pelajar</h2>
+        <img src="image/Gambar 2.jpg">
+        <p>Apa fungsi dari laptop? Hasil gambar untuk laptop fungsi Laptop adalah perangkat yang dapat digunakan mengolah data menjadi informasi atau menghasilkan data lainnya. Fungsinya sama seperti komputer.
+         Seiring berkembangnya jaman laptop mempunyai peran penting dalam dunia pendidikan, laptop menjadi media pendukung untuk belajar, berbagai aktifitas belajar di lakukan dengan laptop contohnya dengan laptop pelajar mendapatkan informasi lewat internet, banyak sekali tugas – tugas sekolah yang bisa di selesaikan dengan laptop, ketika sedang jenuh dengan tugas sekolah, laptop juga bisa menghibur sejenak dengan main game, mendengarkan lagu, atau bahkan menonton film. dan saya akan membahas manfaat – manfaat laptop dalam dunia pendidikan:
+          1.       Untuk membuat makalah
+          Sering sekali tugas sekolah muncul seperti membuat makalah, dengan laptop kita bisa menyelesaikan makalah dengan cepat dan murah, bayangkan ketika ada tugas makalah dan kita harus menyelesaikannya di warnet pasti akan lebih boros karena harus membayar biaya warnet.
+          2.       Sebagai media presentasi
+          Di sekolah sering sekali adanya kegiatan presentasi, dengan adanya presentasi di harapkan tingkat kepercayaan diri pada murid akan meningkat, selain itu murid juga berlatih supaya mampu menyampaikan materi kepada peserta.Dengan adanya laptop mampu mempercepat dan mempermudah dalam penyelesaian tugas sekolah, selain itu juga di harapkan murid mampu mengoprasikan laptop.
+          3.       Sebagai hiburan
+          Banyak sekali kegunaan laptop salah satunya untuk hiburan, ketika murid sudah penat dengan tugas tugas sekolah, maka laptop pun dapat memberikan peran sebagai media untuk menghibur, contohnya murid bisa main games, nonton film kesukaan, atau bahkan mendengarkan lagu favotite.
+          4.       Sebagai informasi
+          Manfaat laptop selanjutnya yaitu sebagai media informasi bagi para murid untuk membantu menyelesaikan tugas sekolah, selain itu juga murid dapat menggunakan laptop untuk mencari informasi – informasi materi yang akan di bahas keesokan harinya.
+
+          Begitu pentingnya laptop untuk menunjang dalam berbagai aktivitas, maka tak heran penggunaan laptop semakin meningkat. Banyak merk laptop dengan berbagai macam harga, sekarang saya akan bahas hal -hal apa saja yang harus kita tahu sebelum membeli laptop atau komputer.
+          a.       Sesuaikan laptop dengan kebutuhan
+          Setiap jenis laptop itu memiliki kelebihan yang berbeda -beda, maka pilihlah laptop yang sesuai dengan kebutuhan. Jangan sampai anda tergiur dengan laptop yang mahal karena memiliki aplikasi – aplikasi yang yang tinggi padahal anda akan menggunakan laptop hannya untuk mengetik mengerjakan tugas sekolah, jadi untuk apa memiliki laptop yang aplikasinya canggih tetapi anda tidak menggunakan aplikasi tersebut. Jangan sampai anda kecewa setelah membelinya b.      Tempat
+          Sebelum menentukan pilihan mau membeli laptop atau komputer coba pikirkan anda akan menggunakannya lebih banyak di rumah atau di luar, jika sering digunakan di rumah maka lebih baik membeli komputer, akan tetapi apabila akan banyak di gunakan di luar maka lebih baik memilih untuk membeli laptop, karena komputer tidak bisa di bawa kemana -mana. Sedangkan laptop bisa di bawa kemana – mana.</p>
+        <a href="#">Baca Selengkapnya</a>
+      </article>
+    </section>
+
+		<div class="sidebar">
+			<img src="image/Gambar 1.png">
+			<ul>
+					<li><a href="html.html">HTML</a></li>
+					<li><a href="css.html">CSS</a></li>
+					<li><a href="php.html">PHP</a></li>
+					<li><a href="mysql.html">MySQL</a></li>
+					<li><a href="javascript.html">Javascript</a></li>		
+			</ul>
+			<a href="iklan.html">
+				<img src="image/ads280.png" alt="Bundara HI">
+			</a>
+		</div>
+		<br class="clear">
+		<div class="footer">
+			<p class="copyright">Copyright Awesome Website 2015</p>
+			<ul class="footermenu">
+					<li><a href="term_of_use.html">Term of Use</a></li>
+					<li><a href="privacy_policy.html">Privacy Policy</a></li>
+					<li><a href="disclaimer.html">Disclaimer</a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		document.getElementById("mainMenu").onchange=function() {
+			if (this.selectedIndex!==0) {
+				window.location.href = this.value;
+			}
+		};
+	</script>
+</body>
+</html>
